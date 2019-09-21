@@ -1,5 +1,5 @@
 class Post
-  @@all
+  @@all = []
   def all
     @@all
   end
