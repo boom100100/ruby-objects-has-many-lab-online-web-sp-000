@@ -6,9 +6,11 @@ class Artist
 
   def addSong
   end
-
+  
   def songs
-    Song.all.select do |song|
+    Song.all.select {|song|
       song.artist = self
-    end
+    }
+  end
+  
 end
