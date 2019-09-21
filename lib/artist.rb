@@ -4,14 +4,14 @@ class Artist
     @name = name
   end
 
-  def addSong(title)
+  def add_song(song)
     Song.new(title)
   end
 
   def songs
-    Song.all.select {|song|
-      song.artist = self
-    }
+    Song.all#.select {|song|
+      #song.artist = self
+    #}
   end
 
 end
