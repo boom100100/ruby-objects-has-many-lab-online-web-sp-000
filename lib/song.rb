@@ -4,6 +4,7 @@ class Song
 
   def initialize(title)
     @@all << title
+    @artist = ""
   end
 
   def save
